@@ -1,4 +1,4 @@
-INSERT INTO campus.equipment (name) VALUES
+INSERT INTO campus.equipment (equipment_name) VALUES
 ('Компьютер Dell OptiPlex 7090'),
 ('Компьютер HP ProDesk 600 G6'),
 ('Компьютер Lenovo ThinkCentre M720'),

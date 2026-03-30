@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS campus.building (
   building_id SERIAL PRIMARY KEY,
-  name VARCHAR(100) not null,
+  building_name VARCHAR(100) not null,
   address VARCHAR(100) not null
 );
 
