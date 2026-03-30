@@ -1,0 +1,22 @@
+user_id,full_name,role,phone,email
+1,Иванов Иван Иванович,student,+79000000001,ivanov1@student.ru
+2,Петров Пётр Сергеевич,student,+79000000002,petrov1@student.ru
+3,Сидорова Анна Викторовна,student,+79000000003,sidorova1@student.ru
+4,Кузнецов Дмитрий Олегович,student,+79000000004,kuznetsov1@student.ru
+5,Смирнова Екатерина Андреевна,student,+79000000005,smirnova1@student.ru
+6,Волков Артём Ильич,student,+79000000006,volkov1@student.ru
+7,Фёдорова Мария Игоревна,student,+79000000007,fedorova1@student.ru
+8,Морозов Кирилл Андреевич,student,+79000000008,morozov1@student.ru
+9,Новикова Ольга Дмитриевна,student,+79000000009,novikova1@student.ru
+10,Егоров Максим Сергеевич,student,+79000000010,egorov1@student.ru
+11,Васильев Алексей Николаевич,seminarist,+79000000011,vasiliev@uni.ru
+12,Захарова Дарья Константиновна,seminarist,+79000000012,zakharova@uni.ru
+13,Павлов Роман Игоревич,seminarist,+79000000013,pavlov@uni.ru
+14,Соловьёва Татьяна Викторовна,seminarist,+79000000014,solovieva@uni.ru
+15,Кузьмин Сергей Петрович,lector,+79000000015,kuzmin@uni.ru
+16,Орлова Елена Андреевна,lector,+79000000016,orlova@uni.ru
+17,Григорьев Николай Васильевич,lector,+79000000017,grigoriev@uni.ru
+18,Попов Андрей Владимирович,assistant,+79000000018,popov@uni.ru
+19,Козлова Наталья Сергеевна,assistant,+79000000019,kozlova@uni.ru
+20,Лебедев Илья Олегович,assistant,+79000000020,lebedev@uni.ru
+21,Калинин Иван Сергеевич,seminarist,+78005553535,kalinin.is@student.ru
