@@ -142,3 +142,57 @@ left join campus.booking b
    and b.status = 'active'
 where b.booking_id is null
 order by u.full_name;
+
+-- 11) Ранк каждой аудитории по вместимости внутри своего корпуса
+select
+    bu.building_name,
+    r.room_number,
+    r.capacity,
+    rank() over (
+        partition by bu.building_id
+        order by r.capacity desc
+    ) as capacity_rank
+from campus.room r
+join campus.building bu
+    on r.building_id = bu.building_id
+order by bu.building_name, capacity_rank;
+
+-- 12) Ранк брони каждого пользователя
+select
+    u.user_id,
+    u.full_name,
+    u.role,
+    b.booking_id,
+    b.start_at,
+    b.end_at,
+    row_number() over (
+        partition by u.user_id
+        order by b.start_at desc
+    ) as booking_rank
+from campus.users u
+join campus.booking b
+    on u.user_id = b.user_id
+order by u.user_id, b.start_at desc;
+
+-- 13) Последнee бронирование каждого пользователя
+select
+    u.user_id,
+    u.full_name,
+    u.role,
+    b.booking_id,
+    b.start_at,
+    b.end_at,
+    b.status
+from (
+    select
+        *,
+        row_number() over (
+            partition by b.user_id
+            order by b.start_at desc
+        ) as booking_rank
+    from campus.booking b
+) b
+join campus.users u
+    on b.user_id = u.user_id
+where b.booking_rank = 1
+order by u.user_id;
